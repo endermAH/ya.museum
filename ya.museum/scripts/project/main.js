@@ -106,7 +106,7 @@ async function OnBeforeProjectStart(runtime)
 	for (const image of building_images) {
 		const textFileUrl = await runtime.assets.getProjectFileUrl(`buildings_images/${image}`);
 		fetch(textFileUrl);
-		console.log(`Fetching ${image}`)
+		console.log(`Fetching ${image} from ${textFileUrl}`)
   	}
 	
 	runtime.addEventListener("tick", () => Tick(runtime));
