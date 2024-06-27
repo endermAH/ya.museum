@@ -74,7 +74,7 @@ const scriptsInEvents = {
 		LogMapActivity("story")
 	},
 
-	async Es_main_Event28_Act8(runtime, localVars)
+	async Es_main_Event30_Act8(runtime, localVars)
 	{
 		LogBuildingCheck(localVars.house_id)
 		LogHouseCheck(runtime.callFunction("get_hause_field", localVars.house_id, "name"))
