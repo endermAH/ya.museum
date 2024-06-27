@@ -101,20 +101,20 @@ async function OnBeforeProjectStart(runtime)
 	
 	// Async preload images from list
 	
-	const buildings_url = await runtime.assets.getProjectFileUrl(`buildings.json`);
-	await fetch(buildings_url);
-	const years_url = await runtime.assets.getProjectFileUrl(`years.json`);
-	await fetch(years_url);
+	// const buildings_url = await runtime.assets.getProjectFileUrl(`buildings.json`);
+	// await fetch(buildings_url);
+	// const years_url = await runtime.assets.getProjectFileUrl(`years.json`);
+	// await fetch(years_url);
 	
-	// Async preload images from list
-	var building_images = h_images.split("\n")
-	for (const image of building_images) {
-		const textFileUrl = await runtime.assets.getProjectFileUrl(`buildings_images/${image}`);
-		await fetch(textFileUrl);
-		console.log(`Fetching ${image}`)
-  	}
+	// // Async preload images from list
+	// var building_images = h_images.split("\n")
+	// for (const image of building_images) {
+	// 	const textFileUrl = await runtime.assets.getProjectFileUrl(`buildings_images/${image}`);
+	// 	await fetch(textFileUrl);
+	// 	console.log(`Fetching ${image}`)
+  	// }
 	
-	runtime.addEventListener("tick", () => Tick(runtime));
+	// runtime.addEventListener("tick", () => Tick(runtime));
 }
 
 function Tick(runtime)
