@@ -76,8 +76,8 @@ const scriptsInEvents = {
 
 	async Es_main_Event30_Act8(runtime, localVars)
 	{
-		LogBuildingCheck(localVars.house_id)
-		LogHouseCheck(runtime.callFunction("get_hause_field", localVars.house_id, "name"))
+		LogBuildingCheck(runtime.callFunction("get_haus_field", localVars.house_id, "name"))
+		LogHouseCheck(runtime.callFunction("get_haus_field", localVars.house_id, "name"))
 	}
 
 };
