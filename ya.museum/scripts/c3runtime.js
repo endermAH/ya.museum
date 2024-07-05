@@ -5133,6 +5133,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.LoadURL,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.iframe.Acts.NavigateURL,
+		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.Browser.Acts.ConsoleLog,
 		C3.Plugins.System.Cnds.RegexTest,
