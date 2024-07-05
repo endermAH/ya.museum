@@ -44,37 +44,42 @@ function LogHouseCheck(house_name) {
 
 const scriptsInEvents = {
 
-	async Es_main_Event13_Act2(runtime, localVars)
+	async Es_main_Event15_Act2(runtime, localVars)
 	{
 		LogSelectContent("show", "book")
 	},
 
-	async Es_main_Event14_Act2(runtime, localVars)
+	async Es_main_Event17_Act2(runtime, localVars)
 	{
 		LogSelectContent("show", "gallery")
 	},
 
-	async Es_main_Event15_Act2(runtime, localVars)
+	async Es_main_Event19_Act2(runtime, localVars)
 	{
-		LogSelectContent("show", "age_story")
-	},
-
-	async Es_main_Event16_Act2(runtime, localVars)
-	{
-		LogSelectContent("show", "video")
-	},
-
-	async Es_main_Event18_Act1(runtime, localVars)
-	{
-		LogMapActivity("sound")
+		LogSelectContent("show", "video_big")
 	},
 
 	async Es_main_Event21_Act2(runtime, localVars)
 	{
+		LogSelectContent("show", "age_story")
+	},
+
+	async Es_main_Event23_Act2(runtime, localVars)
+	{
+		LogSelectContent("show", "video")
+	},
+
+	async Es_main_Event27_Act1(runtime, localVars)
+	{
+		LogMapActivity("sound")
+	},
+
+	async Es_main_Event31_Act2(runtime, localVars)
+	{
 		LogMapActivity("story")
 	},
 
-	async Es_main_Event30_Act8(runtime, localVars)
+	async Es_main_Event44_Act9(runtime, localVars)
 	{
 		LogBuildingCheck(runtime.callFunction("get_haus_field", localVars.house_id, "name"))
 		LogHouseCheck(runtime.callFunction("get_haus_field", localVars.house_id, "name"))

@@ -5106,45 +5106,56 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.sliderbar.Acts.SetVisible,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.System.Cnds.IsGroupActive,
-		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.Touch.Cnds.OnTouchObject,
 		C3.Plugins.System.Cnds.CompareVar,
-		C3.ScriptsInEvents.Es_main_Event13_Act2,
-		C3.ScriptsInEvents.Es_main_Event14_Act2,
 		C3.ScriptsInEvents.Es_main_Event15_Act2,
+		C3.ScriptsInEvents.Es_main_Event17_Act2,
+		C3.ScriptsInEvents.Es_main_Event19_Act2,
+		C3.ScriptsInEvents.Es_main_Event21_Act2,
 		C3.Plugins.Sprite.Cnds.IsVisible,
-		C3.ScriptsInEvents.Es_main_Event16_Act2,
-		C3.ScriptsInEvents.Es_main_Event18_Act1,
+		C3.ScriptsInEvents.Es_main_Event23_Act2,
+		C3.ScriptsInEvents.Es_main_Event27_Act1,
 		C3.Plugins.Audio.Cnds.IsTagPlaying,
 		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.Audio.Acts.PlayByName,
-		C3.ScriptsInEvents.Es_main_Event21_Act2,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.ScriptsInEvents.Es_main_Event31_Act2,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Plugins.iframe.Acts.SetVisible,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Behaviors.Fade.Acts.StartFade,
 		C3.Plugins.Sprite.Cnds.OnURLLoaded,
 		C3.Plugins.Text.Acts.SetVisible,
+		C3.Plugins.Sprite.Acts.SetSize,
 		C3.Plugins.Sprite.Cnds.OnURLFailed,
-		C3.ScriptsInEvents.Es_main_Event30_Act8,
+		C3.ScriptsInEvents.Es_main_Event44_Act9,
+		C3.Plugins.Text.Acts.SetFontSize,
 		C3.Plugins.Sprite.Acts.LoadURL,
-		C3.Plugins.System.Cnds.RegexTest,
+		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.iframe.Acts.NavigateURL,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
+		C3.Plugins.Browser.Acts.ConsoleLog,
+		C3.Plugins.System.Cnds.RegexTest,
+		C3.Plugins.System.Exps.replace,
+		C3.Plugins.Text.Exps.Text,
+		C3.Plugins.System.Cnds.While,
+		C3.Plugins.Text.Cnds.CompareWidth,
+		C3.Plugins.Text.Exps.TextWidth,
+		C3.Plugins.Text.Exps.FaceSize,
+		C3.Plugins.Text.Exps.TextHeight,
+		C3.Plugins.Text.Exps.Height,
 		C3.Plugins.NinePatch.Cnds.PickByUID,
-		C3.Plugins.Sprite.Acts.SetWidth,
-		C3.Plugins.NinePatch.Exps.Width,
-		C3.Plugins.Sprite.Acts.SetHeight,
-		C3.Plugins.Sprite.Exps.Width,
-		C3.Plugins.Sprite.Exps.ImageHeight,
-		C3.Plugins.Sprite.Exps.ImageWidth,
-		C3.Plugins.NinePatch.Acts.SetHeight,
-		C3.Plugins.Sprite.Exps.Height,
-		C3.Plugins.iframe.Acts.SetHeight,
-		C3.Plugins.NinePatch.Exps.Height,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.Sprite.Acts.SetScale,
+		C3.Plugins.Sprite.Acts.SetWidth,
+		C3.Plugins.NinePatch.Exps.Width,
+		C3.Plugins.Sprite.Exps.Width,
+		C3.Plugins.Sprite.Acts.SetHeight,
+		C3.Plugins.Sprite.Exps.ImageHeight,
+		C3.Plugins.Sprite.Exps.ImageWidth,
 		C3.Plugins.Sprite.Cnds.CompareHeight,
-		C3.Plugins.Text.Exps.Height,
+		C3.Plugins.NinePatch.Exps.Height,
+		C3.Plugins.Sprite.Exps.Height,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.NinePatch.Exps.X,
 		C3.Plugins.NinePatch.Exps.Y,
@@ -5164,7 +5175,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
 		C3.Plugins.System.Acts.CreateObject,
-		C3.Plugins.Text.Exps.UID
+		C3.Plugins.Text.Acts.SetFontColor,
+		C3.Plugins.System.Exps.rgbex255,
+		C3.Plugins.Text.Acts.SetOpacity,
+		C3.Plugins.Text.Exps.UID,
+		C3.Plugins.Text.Cnds.PickByUID
 	];
 };
 self.C3_JsPropNameTable = [
@@ -5172,7 +5187,7 @@ self.C3_JsPropNameTable = [
 	{S_Book_Exit: 0},
 	{S_Book_ShowButton: 0},
 	{T_Book_Header: 0},
-	{T_House_Static: 0},
+	{T_House_Name: 0},
 	{T_House_Description: 0},
 	{IF_House_Splat: 0},
 	{S_House_Exit: 0},
@@ -5183,6 +5198,9 @@ self.C3_JsPropNameTable = [
 	{IF_House_Panorama: 0},
 	{Fade: 0},
 	{S_House_Photo: 0},
+	{S_House_Frame: 0},
+	{S_House_ImagePlaceholred: 0},
+	{S_House_TextBG: 0},
 	{Anchor_2: 0},
 	{S_Gallery_ShowButton: 0},
 	{T_Gallery_Header: 0},
@@ -5192,6 +5210,7 @@ self.C3_JsPropNameTable = [
 	{add: 0},
 	{S_Gallery_Navigation: 0},
 	{T_Current_Year: 0},
+	{S_Common_Slider: 0},
 	{T_Text_Header: 0},
 	{T_Text_Content: 0},
 	{S_Text_Exit: 0},
@@ -5209,13 +5228,17 @@ self.C3_JsPropNameTable = [
 	{S_Map_Text: 0},
 	{house_id: 0},
 	{name_id: 0},
+	{shadow_id: 0},
 	{S_Map_House: 0},
 	{url: 0},
 	{name: 0},
+	{video_id: 0},
 	{S_Map_Video: 0},
+	{J_Video: 0},
 	{IF_Video: 0},
 	{T_Video_Header: 0},
 	{S_Video_Exit: 0},
+	{S_Video_ShowButton: 0},
 	{IF_Book: 0},
 	{Mouse: 0},
 	{"9patch": 0},
@@ -5239,6 +5262,9 @@ self.C3_JsPropNameTable = [
 	{iframe: 0},
 	{Video: 0},
 	{T_House_Loading: 0},
+	{широкаяРамкаСБумагой: 0},
+	{текстовоеОкноПобольше: 0},
+	{дляФотоБезБумаги_: 0},
 	{Tween: 0},
 	{FS_GrowOnOver: 0},
 	{Map_CurrentYear: 0},
@@ -5261,7 +5287,7 @@ self.InstanceType = {
 	S_Book_Exit: class extends self.ISpriteInstance {},
 	S_Book_ShowButton: class extends self.ISpriteInstance {},
 	T_Book_Header: class extends self.ITextInstance {},
-	T_House_Static: class extends self.ITextInstance {},
+	T_House_Name: class extends self.ITextInstance {},
 	T_House_Description: class extends self.ITextInstance {},
 	IF_House_Splat: class extends self.IIframeInstance {},
 	S_House_Exit: class extends self.ISpriteInstance {},
@@ -5271,6 +5297,9 @@ self.InstanceType = {
 	S_House_inside: class extends self.ISpriteInstance {},
 	IF_House_Panorama: class extends self.IIframeInstance {},
 	S_House_Photo: class extends self.ISpriteInstance {},
+	S_House_Frame: class extends self.ISpriteInstance {},
+	S_House_ImagePlaceholred: class extends self.ISpriteInstance {},
+	S_House_TextBG: class extends self.ISpriteInstance {},
 	S_Gallery_ShowButton: class extends self.ISpriteInstance {},
 	T_Gallery_Header: class extends self.ITextInstance {},
 	IF_Gallery_Photos: class extends self.IIframeInstance {},
@@ -5278,6 +5307,7 @@ self.InstanceType = {
 	S_Gallery_Photos: class extends self.ISpriteInstance {},
 	S_Gallery_Navigation: class extends self.ISpriteInstance {},
 	T_Current_Year: class extends self.ITextInstance {},
+	S_Common_Slider: class extends self.ISpriteInstance {},
 	T_Text_Header: class extends self.ITextInstance {},
 	T_Text_Content: class extends self.ITextInstance {},
 	S_Text_Exit: class extends self.ISpriteInstance {},
@@ -5291,9 +5321,11 @@ self.InstanceType = {
 	S_Map_Text: class extends self.ISpriteInstance {},
 	S_Map_House: class extends self.ISpriteInstance {},
 	S_Map_Video: class extends self.ISpriteInstance {},
+	J_Video: class extends self.IJSONInstance {},
 	IF_Video: class extends self.IIframeInstance {},
 	T_Video_Header: class extends self.ITextInstance {},
 	S_Video_Exit: class extends self.ISpriteInstance {},
+	S_Video_ShowButton: class extends self.ISpriteInstance {},
 	IF_Book: class extends self.IIframeInstance {},
 	Mouse: class extends self.IInstance {},
 	_9patch: class extends self.IWorldInstance {},
@@ -5311,6 +5343,9 @@ self.InstanceType = {
 	iframe: class extends self.IIframeInstance {},
 	Video: class extends self.IWorldInstance {},
 	T_House_Loading: class extends self.ITextInstance {},
+	широкаяРамкаСБумагой: class extends self.ISpriteInstance {},
+	текстовоеОкноПобольше: class extends self.ISpriteInstance {},
+	дляФотоБезБумаги_: class extends self.ISpriteInstance {},
 	FS_GrowOnOver: class extends self.ISpriteInstance {}
 }
 }
@@ -5414,6 +5449,7 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => "buildings",
 		() => "years",
+		() => "video",
 		() => "UI_COMMON",
 		p => {
 			const n0 = p._GetNode(0);
@@ -5445,6 +5481,8 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpObject((v1.GetValue() + ".age.1"));
 		},
 		() => "UI_DISABLED",
+		() => "UI_HOUSE_IFRAME",
+		() => "UI_VIDEO_IFRAME",
 		() => "UI_BOOK",
 		() => "UI_HOUSE_INFO",
 		() => "UI_GALLERY",
@@ -5456,9 +5494,21 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "UI_ROTATE_PHONE",
 		() => "Common",
+		() => "Экскурсия по Ягодному",
+		() => "https://www.youtube.com/embed/UmVJezp8CYI?si=3YEBWR7Js-Xtlx3r",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue()).toString();
+			return () => ((Math.floor((v0.GetValue() / 10)) * 10)).toString();
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			return () => n0.ExpObject((n1.ExpInstVar() + ".header"));
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			return () => n0.ExpObject((n1.ExpInstVar() + ".url"));
 		},
 		p => {
 			const n0 = p._GetNode(0);
@@ -5468,49 +5518,53 @@ self.C3_ExpressionFuncs = [
 		() => 0,
 		() => "Book",
 		() => "House",
+		() => 1232,
+		() => 824,
 		() => "Изображение не найдено :(",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const v1 = p._GetNode(1).GetVar();
-			return () => f0(v1.GetValue(), "name");
+			return () => (("[u]" + f0(v1.GetValue(), "name")) + "[/u]");
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const v1 = p._GetNode(1).GetVar();
 			return () => f0(v1.GetValue(), "description");
 		},
+		() => "Загрузка изображения...",
+		() => 24,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (("buildings_images/" + v0.GetValue()) + ".jpg");
 		},
-		() => "Загрузка изображения...",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const v1 = p._GetNode(1).GetVar();
 			return () => f0(v1.GetValue(), "splat_url");
 		},
-		() => "http.://.*",
-		() => "gi",
+		() => "N/A",
 		() => 1,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const v1 = p._GetNode(1).GetVar();
 			return () => f0(v1.GetValue(), "360_url");
 		},
-		() => 12,
+		() => "http.://.*",
+		() => "gi",
+		() => 48,
 		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() - 48);
-		},
-		p => {
-			const n0 = p._GetNode(0);
+			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
-			const n2 = p._GetNode(2);
-			return () => (n0.ExpObject() * (n1.ExpObject() / n2.ExpObject()));
+			return () => f0(n1.ExpObject(), " ", "_");
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() + 48);
+			return () => (n0.ExpObject() - 1);
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const n1 = p._GetNode(1);
+			return () => f0(n1.ExpObject(), "_", " ");
 		},
 		() => "Gallery",
 		p => {
@@ -5522,11 +5576,16 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (and("gallery/", (v0.GetValue() + 1)) + ".jpg");
 		},
-		() => 24,
 		p => {
 			const n0 = p._GetNode(0);
 			const n1 = p._GetNode(1);
 			return () => ((n0.ExpObject() - (n1.ExpObject() * 2)) - 32);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			return () => (n0.ExpObject() * (n1.ExpObject() / n2.ExpObject()));
 		},
 		p => {
 			const n0 = p._GetNode(0);
@@ -5590,17 +5649,31 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpInstVar_Family();
 		},
 		() => "NamedSprite",
-		() => "UI_OBJECTS",
+		() => "UI_TREES",
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() + 2);
+		},
 		p => {
 			const n0 = p._GetNode(0);
 			const n1 = p._GetNode(1);
-			return () => ((n0.ExpObject() - (n1.ExpObject() / 2)) - 30);
+			return () => (((n0.ExpObject() - (n1.ExpObject() / 2)) - 20) + 2);
 		},
 		() => "",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0(0, 0, 0);
+		},
+		() => 50,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
 			return () => f0(n1.ExpInstVar(), "name");
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			return () => ((n0.ExpObject() - (n1.ExpObject() / 2)) - 20);
 		},
 		() => "Video",
 		p => {

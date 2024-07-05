@@ -85,6 +85,13 @@ umivalnik.jpg
 velosclad.jpg
 wodden_pomost.jpg`
 
+// var LOAD_IN_PROGRESS = 0
+// var LOAD_PAUSED = 1
+// var LOAD_FINISHED = 2
+// var LOAD_IN_CONTINUED = 3
+
+// var load_status = LOAD_IN_PROGRESS
+
 runOnStartup(async runtime =>
 {
 	// Code to run on the loading screen.
@@ -99,25 +106,35 @@ async function OnBeforeProjectStart(runtime)
 	// the first layout. Loading has finished and initial
 	// instances are created and available to use here.
 	
-	// Async preload images from list
+// 	const buildings_url = await runtime.assets.getProjectFileUrl(`buildings.json`);
+// 	await fetch(buildings_url);
+// 	const years_url = await runtime.assets.getProjectFileUrl(`years.json`);
+// 	await fetch(years_url);
 	
-	// const buildings_url = await runtime.assets.getProjectFileUrl(`buildings.json`);
-	// await fetch(buildings_url);
-	// const years_url = await runtime.assets.getProjectFileUrl(`years.json`);
-	// await fetch(years_url);
+// 	// Async preload images from list
+// 	var building_images = h_images.split("\n")
+// 	for (const image of building_images) {
+// 		const textFileUrl = await runtime.assets.getProjectFileUrl(`buildings_images/${image}`);
+// 		await fetch(textFileUrl);
+// 		console.log(`Fetching ${image}`)
+//   	}
 	
-	// // Async preload images from list
-	// var building_images = h_images.split("\n")
-	// for (const image of building_images) {
-	// 	const textFileUrl = await runtime.assets.getProjectFileUrl(`buildings_images/${image}`);
-	// 	await fetch(textFileUrl);
-	// 	console.log(`Fetching ${image}`)
-  	// }
-	
-	// runtime.addEventListener("tick", () => Tick(runtime));
+	runtime.addEventListener("tick", () => Tick(runtime));
 }
+
+async function fetchImage(image) {
+	const textFileUrl = await runtime.assets.getProjectFileUrl(`buildings_images/${image}`);
+	await fetch(textFileUrl);
+}
+// function PauseLoading() {
+// 	load_status = LOAD_PAUSED
+// } 
+
+// function ContinueLoading() {
+// 	load_status = LOAD_IN_CONTINUED
+// } 
 
 function Tick(runtime)
 {
-	// Code to run every tick
+// 	if ()
 }
