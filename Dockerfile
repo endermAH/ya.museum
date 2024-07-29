@@ -12,5 +12,7 @@ RUN  a2enmod headers && sed -ri -e 's/^([ \t]*)(<\/VirtualHost>)/\1\tHeader set 
 RUN sed -ri -e 's/#LoadModule headers_module/LoadModule headers_module/' /etc/apache2/*/*.conf
 RUN sed -ri -e 's/#LoadModule rewrite_module/LoadModule rewrite_module/' /etc/apache2/*/*.conf
 
+RUN cp ${APACHE_DOCUMENT_ROOT}/icons/* /usr/share/apache2/icons
+
 COPY ./ya.museum "${APACHE_DOCUMENT_ROOT}"
 
