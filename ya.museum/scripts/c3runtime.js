@@ -4687,6 +4687,8 @@ ScreenWidth(){return this._screenWidth},ScreenHeight(){return this._screenHeight
 		constructor(inst, properties)
 		{
 			super(inst, DOM_COMPONENT_ID); //Registering the DOM component for the 
+			debugger;
+
 			if (properties){
 				this._gaID = properties[0];
 				this._trackPreview = properties[1];
@@ -5132,8 +5134,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Acts.SetFontSize,
 		C3.Plugins.Sprite.Acts.LoadURL,
 		C3.Plugins.System.Cnds.Compare,
-		C3.Plugins.iframe.Acts.NavigateURL,
 		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.iframe.Acts.NavigateURL,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.Browser.Acts.ConsoleLog,
 		C3.Plugins.System.Cnds.RegexTest,
@@ -5175,12 +5177,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.OnCreated,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
+		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
+		C3.Plugins.Text.Cnds.PickByUID,
+		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.System.Acts.CreateObject,
+		C3.Plugins.Text.Exps.UID,
 		C3.Plugins.Text.Acts.SetFontColor,
 		C3.Plugins.System.Exps.rgbex255,
-		C3.Plugins.Text.Acts.SetOpacity,
-		C3.Plugins.Text.Exps.UID,
-		C3.Plugins.Text.Cnds.PickByUID
+		C3.Plugins.Text.Acts.SetOpacity
 	];
 };
 self.C3_JsPropNameTable = [
@@ -5230,6 +5234,7 @@ self.C3_JsPropNameTable = [
 	{house_id: 0},
 	{name_id: 0},
 	{shadow_id: 0},
+	{active: 0},
 	{S_Map_House: 0},
 	{url: 0},
 	{name: 0},
@@ -5266,6 +5271,7 @@ self.C3_JsPropNameTable = [
 	{широкаяРамкаСБумагой: 0},
 	{текстовоеОкноПобольше: 0},
 	{дляФотоБезБумаги_: 0},
+	{Sprite: 0},
 	{Tween: 0},
 	{FS_GrowOnOver: 0},
 	{Map_CurrentYear: 0},
@@ -5347,6 +5353,7 @@ self.InstanceType = {
 	широкаяРамкаСБумагой: class extends self.ISpriteInstance {},
 	текстовоеОкноПобольше: class extends self.ISpriteInstance {},
 	дляФотоБезБумаги_: class extends self.ISpriteInstance {},
+	Sprite: class extends self.ISpriteInstance {},
 	FS_GrowOnOver: class extends self.ISpriteInstance {}
 }
 }
